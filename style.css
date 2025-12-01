@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #cbcbcb;
+}
+
+nav {
+  background-color: #272757;
+  padding: 10px;
+  position: sticky;
+  text-align: center;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul {
+  font-size: 30px;
+}
+
+nav h1 {
+  float: left;
+  font-size: 30px;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: #9400ff;
+  border-radius: 25px;
+  color: black;
+}
+
+.header {
+  animation: header 1s ease-in-out;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-100%);
+  }
+}
+
+#Home h1 {
+  text-align: center;
+  padding-top: 55px;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+.home_img {
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+  height: 350px;
+}
+
+.home_content {
+  padding-bottom: 20px;
+}
+
+.home_content p {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#About h1 {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.profile_img {
+  margin: auto;
+  display: block;
+  border-radius: 25%;
+  height: 350px;
+}
+
+.about_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about_content p {
+  font-size: 25px;
+}
+
+#Skills h1 {
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_card p {
+  padding-left: 25px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.skill_card h3 {
+  float: right;
+}
+
+.skill_card h2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.skill_card {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 350px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 10px;
+}
+
+#Projects h1 {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 150px;
+}
+
+.project_card {
+  height: auto;
+  width: 400px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 2px solid grey;
+}
+
+#Projects p {
+  font-size: 20px;
+  text-align: left;
+}
+
+.project_content {
+  padding-top: 10px;
+}
+
+#Contact h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#Contact h2 {
+  text-align: center;
+}
+
+#Contact p {
+  font-size: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact_card {
+  height: auto;
+  width: 250px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid grey;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 25px;
+}
+
+.social_contact ul,
+li {
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.social_contact {
+  padding-bottom: 20px;
+  gap: 25px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
+@media screen and (max-width:720px) {
+  .checkbtn {
+    display: block;
+    order: 1;
+    display: flex;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .navbar ul {
+    position: fixed;
+    top: 50px;
+    right: 100%;
+    background-color: gray;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar li a {
+    font-size: 25px;
+  }
+
+  #check:checked~ul {
+    right: 0;
+  }
+
+  .home_img {
+    height: 250px;
+  }
+
+  .profile_img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .home_content h1 {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #Skills h1 {
+    font: size 25px;
+  }
+
+  .contact_card h2 {
+    font-size: 20px;
+  }
+
+  #Contact h3 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .home_content h1 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .home_content p {
+    font-size: 18px;
+  }
+
+  .about_content p {
+    font-size: 18px;
+  }
+
+  #Contact p {
+    font-size: 18px;
+  }
+
+  #Projects p {
+    font-size: 18px;
+  }
+
+  #Projects h2 {
+    font-size: 20px;
+  }
+
+  .project_card {
+    width: 300px;
+  }
+
+  .skill_card {
+    width: 300px;
+  }
+
+  #Skills h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .home_img {
+    height: 200px;
+  }
+
+  .profile_img {
+    height: 200px;
+  }
+
+  .skill_card {
+    width: 250px;
+  }
+
+  .project_card {
+    width: 250px;
+    height: auto;
+  }
+
+  .home_content h1 {
+    font-size: 16px;
+  }
+
+  .home_content p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .about_content p {
+    font-size: 15px;
+  }
+
+  #Contact h2 {
+    font-size: 15px;
+  }
+
+  #Contact p {
+    font-size: 15px;
+  }
+
+  #Projects p {
+    font-size: 15px;
+  }
+
+  #Skills h2 {
+    font-size: 16px;
+  }
+
+  #Projects h2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .home_img {
+    height: 150px;
+  }
+
+  .profile_img {
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  .skill_card {
+    width: 200px;
+    height: auto;
+  }
+
+  .project_card {
+    width: 200px;
+    height: auto;
+  }
+
+  .home_content h1 {
+    font-size: 13px;
+  }
+
+  .home_content p {
+    font-size: 12px;
+  }
+
+  .about_content p {
+    font-size: 12px;
+  }
+
+  #Contact p {
+    font-size: 12px;
+  }
+
+  #Projects p {
+    font-size: 12px;
+  }
+
+  #Skills h2 {
+    font-size: 13px;
+  }
+
+  #Projects h2 {
+    font-size: 13px;
+  }
+
+  #Contact h2 {
+    font-size: 12px;
+  }
+
+  .contact_card {
+    height: auto;
+  }
+}
